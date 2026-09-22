@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Business | RAMESH & GRANDSONS</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="top"><div class="container"><span>RAMESH & GRANDSONS • Business Group</span><span>8804558777 • 6203821250 • 6200120648</span></div></div>
+<nav class="nav"><div class="container navin">
+<a class="brand" href="index.html"><span class="brandmark">R&G</span><span>RAMESH & GRANDSONS<small>BUSINESS GROUP</small></span></a>
+<button class="hamb" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+<div class="links"><a href="index.html">Group Home</a><a href="index.html#businesses">Our Businesses</a><a href="#products" id="productsNav">Products</a><a href="https://wa.me/918804558777" target="_blank" class="navbtn">WhatsApp</a></div>
+</div></nav>
+
+<section class="hero business-page" id="businessHero"><div class="container business-content">
+<span class="eyebrow" id="eyebrow">Business Vertical</span><h1 id="title">Business</h1><p id="desc"></p>
+<div class="actions"><a class="btn gold" id="waLink" href="https://wa.me/918804558777" target="_blank">Enquire on WhatsApp</a><a class="btn outline" href="index.html#businesses">Back to Businesses</a></div>
+</div></section>
+
+<div id="electronicsOnly">
+<section class="business-intro"><div class="container"><div class="head"><div class="kicker">Ramesh Radio Center</div><h2>Your electronics and home-appliance destination.</h2><p>Explore the product catalogue below, check available brands, and send a direct WhatsApp enquiry for the latest price, stock and model details. Product images and prices can be updated through the Catalogue Manager.</p></div>
+<div class="store-grid">
+<div class="store-card"><h3>Amazon</h3><p>Shop available products through our Amazon store.</p><a class="btn dark" target="_blank" href="https://www.amazon.in/l/27943762031?me=A1LE4B1GSUCSJF&ref_=sc_ls_qr">Visit Amazon</a></div>
+<div class="store-card"><h3>Meesho</h3><p>Visit the public Ramesh Radio Center storefront.</p><a class="btn dark" target="_blank" href="https://www.meesho.com/RAMESHRADIOCENTER?ms=2">Visit Meesho</a></div>
+<div class="store-card"><h3>Flipkart</h3><p>Our supplied Flipkart seller/onboarding link.</p><a class="btn dark" target="_blank" href="https://seller.flipkart.com/index.html#dashboard/sellerOnboarding?onboardingState=onboardingDashboard">Open Flipkart</a></div>
+</div></div></section>
+
+<section id="products" class="ecom products-page"><div class="container">
+<div class="head"><div class="kicker">Ramesh Radio Center Catalogue</div><h2>Electronics & Home Appliances</h2><p>Browse the products currently displayed by the shop. Prices can be set individually, and every product has a WhatsApp enquiry option.</p></div>
+<div class="product-tools"><input id="productSearch" type="search" placeholder="Search iron, TV, fan, speaker..."><select id="productCategory"><option>All</option></select></div>
+<div class="products" id="products"><p>Loading products...</p></div>
+</div></section>
+
+<section class="brands"><div class="container"><div class="head"><div class="kicker">Our Brands</div><h2>Brands available through Ramesh Radio Center.</h2><p>Availability depends on current stock and sourcing.</p></div><div class="brand-strip"><span class="brandpill">USHA</span><span class="brandpill">Khetan</span><span class="brandpill">Pigeon</span><span class="brandpill">JUNTO</span><span class="brandpill">Roxy</span><span class="brandpill">More brands available</span></div></div></section>
+
+<section><div class="container"><div class="card"><div class="kicker">Catalogue Manager</div><h2>Update products yourself</h2><p class="bigcopy">Use the Catalogue Manager on the main group website to add or edit product names, prices, descriptions and image paths. Export the updated products.json and replace the file in your GitHub repository to publish the changes.</p><a class="btn dark" href="index.html#catalogue-manager">Open Catalogue Manager</a></div></div></section>
+</div>
+
+<div id="genericBusinessOnly" style="display:none">
+<section><div class="container"><div class="head"><div class="kicker">Business Focus</div><h2 id="genericHeading">What this vertical covers</h2><p id="items"></p></div><div class="card"><h3>Dedicated page ready for expansion</h3><p class="bigcopy">This business page can later include detailed services, products, team members, certificates, FAQs, enquiry forms, photos and updates specific to this business.</p></div></div></section>
+</div>
+
+<footer class="footer"><div class="container"><div class="footgrid"><div><h3>RAMESH & GRANDSONS</h3><p>A multi-business company connecting electronics, e-commerce and future business initiatives.</p></div><div><h4>Contact</h4><div class="footlinks"><span>8804558777</span><span>6203821250</span><span>6200120648</span><span>rameshandgrandsons@gmail.com</span></div></div><div><h4>Address</h4><div class="footlinks"><span>Opposite Durga Mandir,<br>Bihar Road, Ekangarsarai,<br>Bihar – 801301</span></div></div></div><div class="copyright"><span>© 2026 RAMESH & GRANDSONS</span><a href="index.html">Group Home</a></div></div></footer>
+
+<script src="app.js"></script>
+<script>
+const B={
+electronics:{title:"Ramesh Radio Center",desc:"Electronics, home appliances, product catalogue and customer enquiries.",items:"LED/LCD TVs • Fans • Coolers • Irons • Speakers • DTH/Set-top Boxes • Electrical Accessories"},
+ecommerce:{title:"E-Commerce",desc:"Online marketplace selling and customer access through Amazon, Meesho and Flipkart.",items:"Amazon • Meesho • Flipkart • Direct WhatsApp Enquiries"},
+"import-export":{title:"Import / Export",desc:"A future vertical for sourcing, distribution and international trade opportunities.",items:"Sourcing • Distribution • International Trade"},
+"it-services":{title:"IT / Services",desc:"A future technology and professional-services vertical for digital business solutions.",items:"Technology Services • Digital Solutions • Business Support"},
+manufacturing:{title:"Manufacturing",desc:"A future product-development and manufacturing vertical.",items:"Product Development • Manufacturing • Supply"},
+trading:{title:"Trading",desc:"A future B2B and B2C sourcing, distribution and trading vertical.",items:"Sourcing • Distribution • B2B Trading"}
+};
+const key=new URLSearchParams(location.search).get("key")||"electronics";
+const b=B[key]||B.electronics;
+document.getElementById("title").textContent=b.title;
+document.getElementById("desc").textContent=b.desc;
+document.getElementById("eyebrow").textContent=key==="electronics"?"Electronics Business • Ramesh Radio Center":"Business Vertical";
+document.getElementById("waLink").href="https://wa.me/918804558777?text="+encodeURIComponent("Hello RAMESH & GRANDSONS, I want to enquire about "+b.title+".");
+if(key!=="electronics"){
+ document.getElementById("electronicsOnly").style.display="none";
+ document.getElementById("genericBusinessOnly").style.display="block";
+ document.getElementById("genericHeading").textContent=b.title+" — Business Focus";
+ document.getElementById("items").textContent=b.items;
+ document.getElementById("productsNav").style.display="none";
+}else{
+ document.title="Ramesh Radio Center | RAMESH & GRANDSONS";
+}
+</script>
+</body></html>

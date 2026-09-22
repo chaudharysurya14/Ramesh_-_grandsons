@@ -1,211 +1,55 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#07111f">
-<meta name="description" content="RAMESH & GRANDSONS — building on legacy, creating the future. Electronics, e-commerce, trading, IT services, manufacturing and import/export.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="RAMESH & GRANDSONS — Electronics, E-Commerce and future business ventures.">
 <title>RAMESH & GRANDSONS | Business Group</title>
-<style>
-:root{
-  --navy:#07111f; --navy2:#0c1d33; --ink:#142033; --muted:#667085;
-  --line:#e7ebf1; --paper:#fff; --soft:#f5f7fa; --accent:#c58a2b;
-  --accent2:#f2c56b; --green:#16845b; --shadow:0 18px 50px rgba(7,17,31,.10);
-}
-*{box-sizing:border-box} html{scroll-behavior:smooth}
-body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
-a{text-decoration:none;color:inherit}.container{width:min(1160px,92%);margin:auto}
-.topbar{background:#050c16;color:#dbe4ef;font-size:13px;padding:8px 0}
-.topbar .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-nav{position:sticky;top:0;z-index:50;background:rgba(7,17,31,.94);backdrop-filter:blur(12px);color:#fff;border-bottom:1px solid rgba(255,255,255,.09)}
-.navin{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}
-.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.8px}
-.mark{width:44px;height:44px;border:1px solid rgba(242,197,107,.75);border-radius:12px;display:grid;place-items:center;color:var(--accent2);font-weight:900}
-.brand small{display:block;color:#9eb0c5;font-size:10px;letter-spacing:2px;font-weight:600}
-.links{display:flex;gap:24px;align-items:center;font-size:14px;color:#d8e1eb}
-.links a:hover{color:var(--accent2)}
-.navcta{background:var(--accent);color:#101820!important;padding:10px 15px;border-radius:9px;font-weight:800}
-.menu{display:none;background:none;border:0;color:#fff;font-size:27px}
-.hero{background:radial-gradient(circle at 80% 15%,#183c63 0,#0b1e35 38%,#07111f 72%);color:#fff;padding:94px 0 88px;position:relative;overflow:hidden}
-.hero:after{content:"";position:absolute;width:500px;height:500px;border:1px solid rgba(242,197,107,.15);border-radius:50%;right:-180px;top:-160px}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;position:relative;z-index:2}
-.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(242,197,107,.35);color:var(--accent2);padding:7px 11px;border-radius:999px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:700}
-h1{font-size:clamp(45px,7vw,82px);line-height:.98;margin:22px 0 18px;letter-spacing:-3px}
-.hero h1 span{color:var(--accent2)}
-.hero p{font-size:18px;color:#c7d2df;max-width:650px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:10px;font-weight:800;font-size:14px;border:1px solid transparent}
-.btn.primary{background:var(--accent);color:#111b25}.btn.ghost{border-color:#49627d;color:#fff}.btn.light{background:#fff;color:var(--navy)}
-.hero-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:28px;box-shadow:0 25px 70px rgba(0,0,0,.18)}
-.hero-card .big{font-size:54px;font-weight:900;color:var(--accent2);line-height:1}
-.hero-card h3{margin:10px 0 8px;font-size:22px}.hero-card p{font-size:14px;margin:0;color:#b8c6d5}
-.statrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:25px}.stat{padding:15px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09)}.stat b{display:block;font-size:18px;color:#fff}.stat span{font-size:11px;color:#9fb0c3}
-section{padding:86px 0}.section-head{max-width:700px;margin-bottom:38px}.kicker{color:#a06d17;font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:900}.section-head h2{font-size:clamp(31px,4vw,48px);line-height:1.08;margin:8px 0 12px;letter-spacing:-1.5px}.section-head p{color:var(--muted);margin:0}
-.legacy{background:var(--soft)}.legacy-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.quote{font-size:28px;line-height:1.25;font-weight:750;color:var(--navy);border-left:4px solid var(--accent);padding-left:22px}
-.info-card{background:#fff;padding:30px;border-radius:20px;box-shadow:var(--shadow)}.timeline{display:grid;gap:20px}.time{display:grid;grid-template-columns:110px 1fr;gap:20px}.time b{color:#a06d17}.time p{margin:0;color:var(--muted)}
-.businesses{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.biz{padding:25px;border:1px solid var(--line);border-radius:18px;transition:.2s;background:#fff}.biz:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.icon{font-size:27px}.biz h3{margin:14px 0 7px}.biz p{margin:0;color:var(--muted);font-size:14px}
-.ecom{background:var(--navy);color:#fff}.ecom .section-head p{color:#aebdcd}.ecom-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:stretch}
-.product-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.product{background:#fff;color:var(--ink);border-radius:17px;overflow:hidden;border:1px solid #e6eaf0}.product-img{height:135px;display:grid;place-items:center;background:linear-gradient(135deg,#eef2f6,#fff);font-size:48px}.product-body{padding:17px}.product-body h3{margin:0 0 4px;font-size:17px}.product-body p{margin:0 0 12px;color:var(--muted);font-size:13px}.mini{font-size:12px;color:#8a5d12;font-weight:800}.side{border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:27px;background:rgba(255,255,255,.05)}.side h3{font-size:25px;margin-top:0}.brandchips{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 25px}.chip{padding:7px 10px;border:1px solid rgba(255,255,255,.18);border-radius:999px;font-size:12px;color:#d7e0e9}
-.partners{background:var(--soft)}.partner-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.person{background:#fff;border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 8px 25px rgba(7,17,31,.05)}.person img{width:100%;height:290px;object-fit:cover;object-position:center top;background:#e9eef3}.person .pbody{padding:22px}.role{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#a06d17;font-weight:900}.person h3{margin:6px 0 7px;font-size:20px}.person p{margin:0;color:var(--muted);font-size:14px}
-.contact{background:#fff}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:25px}.contact-card{background:var(--soft);padding:30px;border-radius:20px}.contact-list{display:grid;gap:17px;margin-top:22px}.contact-item b{display:block;font-size:12px;color:#8a5d12;text-transform:uppercase;letter-spacing:1px}.contact-item span{font-size:15px}.contact-form{border:1px solid var(--line);border-radius:20px;padding:30px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:800}.field input,.field textarea,.field select{font:inherit;padding:12px;border:1px solid #dce2e9;border-radius:9px;outline:none}.field textarea{min-height:110px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:#a06d17}.footer{background:#050c16;color:#b6c3d0;padding:45px 0 25px}.footgrid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:35px}.footer h3,.footer h4{color:#fff}.footer p{font-size:13px}.footlinks{display:grid;gap:8px;font-size:13px}.copyright{border-top:1px solid rgba(255,255,255,.09);margin-top:30px;padding-top:18px;font-size:12px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.float-wa{position:fixed;right:20px;bottom:20px;width:55px;height:55px;border-radius:50%;background:#18a66a;color:#fff;display:grid;place-items:center;font-size:25px;font-weight:900;box-shadow:0 12px 30px rgba(0,0,0,.2);z-index:80}
-.note{font-size:12px;color:#778398;margin-top:10px}
-@media(max-width:900px){.hero-grid,.legacy-grid,.ecom-grid,.contact-grid{grid-template-columns:1fr}.businesses{grid-template-columns:repeat(2,1fr)}.links{display:none}.menu{display:block}.links.open{display:flex;position:absolute;left:0;right:0;top:76px;background:#07111f;padding:18px 4%;flex-direction:column;align-items:flex-start}.navin{position:relative}.partner-grid{grid-template-columns:1fr 1fr}.footgrid{grid-template-columns:1fr 1fr}}
-@media(max-width:620px){.hero{padding:65px 0}.hero-card{margin-top:5px}.businesses,.partner-grid,.product-grid,.formgrid,.footgrid{grid-template-columns:1fr}.time{grid-template-columns:80px 1fr}.person img{height:330px}section{padding:65px 0}h1{letter-spacing:-2px}.quote{font-size:23px}}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="topbar"><div class="container"><span>Established around 2004 • Electronics & Consumer Products</span><span>Online presence launched May 2026</span></div></div>
+<div class="top"><div class="container"><span>RAMESH & GRANDSONS • Business Group</span><span>Electronics • E-Commerce • Future Ventures</span></div></div>
+<nav class="nav"><div class="container navin">
+<a class="brand" href="index.html"><span class="brandmark">R&G</span><span>RAMESH & GRANDSONS<small>BUSINESS GROUP</small></span></a>
+<button class="hamb" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+<div class="links"><a href="#about">About</a><a href="#businesses">Businesses</a><a href="business.html?key=electronics#products">Products</a><a href="#voltcare">Volt-Care</a><a href="#contact">Contact</a><a class="navbtn" href="https://wa.me/918804558777" target="_blank">WhatsApp</a></div>
+</div></nav>
 
-<nav>
-  <div class="container navin">
-    <a class="brand" href="#home"><span class="mark">R&G</span><span>RAMESH & GRANDSONS<small>BUSINESS GROUP</small></span></a>
-    <button class="menu" aria-label="Menu" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
-    <div class="links">
-      <a href="#about">About</a><a href="#businesses">Businesses</a><a href="#electronics">Electronics</a><a href="#partners">Partners</a><a href="#contact">Contact</a>
-      <a class="navcta" href="https://wa.me/918804558777?text=Hello%20RAMESH%20%26%20GRANDSONS%2C%20I%20would%20like%20to%20enquire%20about%20your%20products." target="_blank">WhatsApp</a>
-    </div>
-  </div>
-</nav>
+<section class="hero"><div class="container hero-grid"><div>
+<span class="eyebrow">Business Group • Electronics • Digital Commerce</span>
+<h1>RAMESH <span>&</span><br>GRANDSONS</h1>
+<p>Building businesses across electronics, e-commerce and emerging commercial opportunities with a practical focus on products, services and long-term growth.</p>
+<div class="actions"><a class="btn gold" href="#businesses">Explore Our Businesses</a><a class="btn outline" href="#contact">Business Enquiry</a></div>
+</div><div class="hero-card"><h3>One group, multiple business directions.</h3><p>RAMESH & GRANDSONS connects the established Ramesh Radio Center electronics business, online marketplace operations and new ventures being developed for the future.</p><div class="stats"><div class="stat"><b>Electronics</b><span>Ramesh Radio Center</span></div><div class="stat"><b>E-Commerce</b><span>Amazon • Meesho • Flipkart</span></div><div class="stat"><b>Future</b><span>Trading • IT • Manufacturing</span></div></div></div></div></section>
 
-<main id="home">
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <span class="eyebrow">Legacy • Trust • Growth</span>
-      <h1>RAMESH <span>&</span><br>GRANDSONS</h1>
-      <p><strong>Building on Legacy. Creating the Future.</strong><br>
-      A growing business group carrying forward a long-standing electronics business while expanding into e-commerce, trading, IT services, manufacturing and import/export.</p>
-      <div class="actions">
-        <a class="btn primary" href="#electronics">Explore Electronics</a>
-        <a class="btn ghost" href="#contact">Business Enquiry</a>
-      </div>
-    </div>
-    <div class="hero-card">
-      <div class="big">20+</div>
-      <h3>Years of Business Legacy</h3>
-      <p>Electronics business operating since around 2004, now moving into a broader multi-business vision.</p>
-      <div class="statrow"><div class="stat"><b>2004</b><span>Business roots</span></div><div class="stat"><b>2026</b><span>Online expansion</span></div><div class="stat"><b>4+</b><span>Future verticals</span></div></div>
-    </div>
-  </div>
-</section>
+<section id="about" class="soft"><div class="container"><div class="head"><div class="kicker">About the Group</div><h2>A growing business platform built around products, commerce and new opportunities.</h2><p>RAMESH & GRANDSONS is the parent business identity connecting our electronics retail and e-commerce activity with new business verticals. The website is designed to grow with the company, so new products, services and ventures can be added without changing the core identity.</p></div><div class="two"><div class="card"><div class="bigcopy">Our approach is straightforward: understand the requirement, provide genuine products or practical business solutions, and make it easy for customers and partners to reach the right person.</div></div><div class="card factlist"><div class="fact"><strong>Electronics</strong><span>Ramesh Radio Center handles consumer electronics and appliances.</span></div><div class="fact"><strong>Online</strong><span>Products are being offered through major marketplace channels.</span></div><div class="fact"><strong>Expansion</strong><span>Trading, import/export, IT/services and manufacturing are part of the broader roadmap.</span></div></div></div></div></section>
 
-<section id="about" class="legacy">
-<div class="container">
-  <div class="section-head"><div class="kicker">Our Story</div><h2>From a trusted local business to a future-ready group.</h2><p>RAMESH & GRANDSONS is designed as the umbrella brand for the family's existing electronics business and its next generation of ventures.</p></div>
-  <div class="legacy-grid">
-    <div class="quote">“Respect the legacy. Build with technology. Grow with trust.”</div>
-    <div class="info-card"><div class="timeline">
-      <div class="time"><b>~2004</b><p>Electronics business begins and grows through local customer relationships and product sales.</p></div>
-      <div class="time"><b>2026</b><p>Online presence and e-commerce expansion begin, opening a new digital channel for customers.</p></div>
-      <div class="time"><b>Next</b><p>Expansion into import/export, IT & services, manufacturing and trading under the RAMESH & GRANDSONS umbrella.</p></div>
-    </div></div>
-  </div>
-</div>
-</section>
+<section id="businesses"><div class="container"><div class="head"><div class="kicker">Our Businesses</div><h2>Explore each business vertical separately.</h2><p>Select a business to open its dedicated page. Each page can later carry detailed services, products, enquiries, documents and updates.</p></div><div class="biz-grid">
+<div class="biz" onclick="openBusiness('electronics')"><div class="ico">⚡</div><h3>Ramesh Radio Center</h3><p>Electronics, appliances, accessories and customer product enquiries.</p><span class="learn">View business →</span></div>
+<div class="biz" onclick="openBusiness('ecommerce')"><div class="ico">🛒</div><h3>E-Commerce</h3><p>Online marketplace selling through Amazon, Meesho and Flipkart.</p><span class="learn">View business →</span></div>
+<div class="biz" onclick="openBusiness('import-export')"><div class="ico">🌍</div><h3>Import / Export</h3><p>Future sourcing, distribution and international trade opportunities.</p><span class="learn">View business →</span></div>
+<div class="biz" onclick="openBusiness('it-services')"><div class="ico">💻</div><h3>IT / Services</h3><p>Technology and professional services for future business initiatives.</p><span class="learn">View business →</span></div>
+<div class="biz" onclick="openBusiness('manufacturing')"><div class="ico">🏭</div><h3>Manufacturing</h3><p>Future product development and manufacturing initiatives.</p><span class="learn">View business →</span></div>
+<div class="biz" onclick="openBusiness('trading')"><div class="ico">📦</div><h3>Trading</h3><p>B2B and B2C sourcing, distribution and trading activities.</p><span class="learn">View business →</span></div>
+</div></div></section>
 
-<section id="businesses">
-<div class="container">
-  <div class="section-head"><div class="kicker">Our Businesses</div><h2>One group. Multiple opportunities.</h2><p>The structure is intentionally built so new ventures can be added later without redesigning the brand.</p></div>
-  <div class="businesses">
-    <div class="biz"><div class="icon">⚡</div><h3>Ramesh Radio Center</h3><p>Electronics, appliances, accessories and consumer products — the group's established business vertical.</p></div>
-    <div class="biz"><div class="icon">🛒</div><h3>E-Commerce</h3><p>Online product selling and customer enquiries through marketplaces and direct WhatsApp communication.</p></div>
-    <div class="biz"><div class="icon">🌍</div><h3>Import / Export</h3><p>Planned international trading and sourcing vertical for future expansion.</p></div>
-    <div class="biz"><div class="icon">💼</div><h3>IT & Services</h3><p>Planned technology and professional services business under the group.</p></div>
-    <div class="biz"><div class="icon">🏭</div><h3>Manufacturing</h3><p>Future manufacturing and product-development opportunities.</p></div>
-    <div class="biz"><div class="icon">📦</div><h3>Trading</h3><p>Future B2B and B2C sourcing, distribution and trading activities.</p></div>
-  </div>
-</div>
-</section>
+<section class="brands"><div class="container"><div class="head"><div class="kicker">Brands & Associated Companies</div><h2>Brands and companies connected with our business activities.</h2><p>Our electronics activity works with recognised brands and associated business relationships. Availability and product range depend on current stock and commercial arrangements.</p></div><div class="brandlist"><span class="brandpill">USHA</span><span class="brandpill">Khetan</span><span class="brandpill">Pigeon</span><span class="brandpill">JUNTO</span><span class="brandpill">Roxy</span><span class="brandpill">Volt-Care</span><span class="brandpill">More brands & companies</span></div></div></section>
 
-<section id="electronics" class="ecom">
-<div class="container">
-  <div class="section-head"><div class="kicker">Electronics & E-Commerce</div><h2>Shop, enquire, or connect with us.</h2><p>Ramesh Radio Center is the group's electronics vertical. Product availability and prices can change, so customers can contact us directly for the latest quote.</p></div>
-  <div class="ecom-grid">
-    <div class="product-grid">
-      <div class="product"><div class="product-img">📺</div><div class="product-body"><h3>LED / LCD TVs</h3><p>Popular consumer television products.</p><span class="mini">ENQUIRE FOR PRICE</span></div></div>
-      <div class="product"><div class="product-img">🧺</div><div class="product-body"><h3>Electric Irons</h3><p>Home-use irons from available brands.</p><span class="mini">ENQUIRE FOR PRICE</span></div></div>
-      <div class="product"><div class="product-img">🌀</div><div class="product-body"><h3>Fans & Coolers</h3><p>Cooling and air-circulation products.</p><span class="mini">ENQUIRE FOR PRICE</span></div></div>
-      <div class="product"><div class="product-img">🔊</div><div class="product-body"><h3>Speakers & Accessories</h3><p>Audio products and useful electronics accessories.</p><span class="mini">ENQUIRE FOR PRICE</span></div></div>
-      <div class="product"><div class="product-img">📡</div><div class="product-body"><h3>DTH / Set-Top Boxes</h3><p>Digital entertainment equipment.</p><span class="mini">ENQUIRE FOR PRICE</span></div></div>
-      <div class="product"><div class="product-img">🔌</div><div class="product-body"><h3>Extension Boards</h3><p>Electrical accessories and everyday utility items.</p><span class="mini">ENQUIRE FOR PRICE</span></div></div>
-    </div>
-    <aside class="side">
-      <h3>Available Brands</h3>
-      <p>Selected products from brands currently handled by the electronics business.</p>
-      <div class="brandchips"><span class="chip">USHA</span><span class="chip">Khetan</span><span class="chip">Pigeon</span><span class="chip">JUNTO</span><span class="chip">Roxy</span><span class="chip">+ more</span></div>
-      <a class="btn light" target="_blank" href="https://www.amazon.in/l/27943762031?me=A1LE4B1GSUCSJF&ref_=sc_ls_qr">Visit Amazon Store</a>
-      <a class="btn primary" style="margin-top:10px;width:100%" target="_blank" href="https://wa.me/918804558777?text=Hello%20RAMESH%20%26%20GRANDSONS%2C%20I%20want%20to%20enquire%20about%20an%20electronics%20product.">Order / Enquire on WhatsApp</a>
-      <p class="note" style="color:#aebdcd">Meesho: replace the current seller-panel URL with the public Meesho storefront link when available.</p>
-    </aside>
-  </div>
-</div>
-</section>
 
-<section id="partners" class="partners">
-<div class="container">
-  <div class="section-head"><div class="kicker">Leadership & Partners</div><h2>Three people. One long-term vision.</h2><p>The founding team brings together engineering, business management, networking and trading experience.</p></div>
-  <div class="partner-grid">
-    <article class="person"><img src="assets/suryadev.jpg" alt="Er. Suryadev Chaudhary"><div class="pbody"><div class="role">CEO</div><h3>Er. Suryadev Chaudhary</h3><p>Engineering and technology professional. Ex-engineer at National Intelligence Grid (NATGRID), Delhi. Focused on technology, systems and future business expansion.</p></div></article>
-    <article class="person"><img src="assets/vishal.jpg" alt="Dr. Vishal Kumar"><div class="pbody"><div class="role">Business Management</div><h3>Dr. Vishal Kumar</h3><p>Influencer, network marketing professional and business management contributor, supporting growth, outreach and business development.</p></div></article>
-    <article class="person"><img src="assets/manish.jpg" alt="Er. Manish Kumar"><div class="pbody"><div class="role">Business Management Supporter</div><h3>Er. Manish Kumar</h3><p>Business management supporter with prior experience in cryptocurrency trading, contributing to business analysis and growth initiatives.</p></div></article>
-  </div>
-</div>
-</section>
+<section id="partners"><div class="container"><div class="head"><div class="kicker">Our Partners</div><h2>The people behind the business.</h2><p>Our leadership section presents the current business partners and their areas of contribution.</p></div><div class="partner-grid">
+<article class="person"><img src="assets/suryadev.jpg" alt="Er. Suryadev Chaudhary"><div class="person-body"><div class="role">CEO</div><h3>Er. Suryadev Chaudhary</h3><p>Engineering and technology professional with experience at NATGRID, Delhi, supporting technology and business expansion.</p></div></article>
+<article class="person"><img src="assets/vishal.jpg" alt="Dr. Vishal Kumar"><div class="person-body"><div class="role">Business Management</div><h3>Dr. Vishal Kumar</h3><p>Business management contributor with experience in networking, outreach and business development.</p></div></article>
+<article class="person"><img src="assets/manish.jpg" alt="Er. Manish Kumar"><div class="person-body"><div class="role">Business Management Support</div><h3>Er. Manish Kumar</h3><p>Business management supporter with prior trading experience and an interest in business analysis and growth.</p></div></article>
+</div></div></section>
 
-<section id="contact" class="contact">
-<div class="container">
-  <div class="section-head"><div class="kicker">Contact</div><h2>Let's build something together.</h2><p>For product enquiries, bulk orders, partnerships or future business opportunities, contact the team.</p></div>
-  <div class="contact-grid">
-    <div class="contact-card">
-      <h3>RAMESH & GRANDSONS</h3>
-      <p>Parent business brand • Electronics & E-Commerce • Future Ventures</p>
-      <div class="contact-list">
-        <div class="contact-item"><b>Address</b><span>Opposite Durga Mandir, Bihar Road, Ekangarsarai, Bihar – 801301</span></div>
-        <div class="contact-item"><b>Phone / WhatsApp</b><span>+91 88045 58777</span></div>
-        <div class="contact-item"><b>Email</b><span>ramesh&amp;grandsons@gmail.com</span></div>
-        <div class="contact-item"><b>GSTIN</b><span>10GNBPK5673K1ZW</span></div>
-      </div>
-    </div>
-    <form class="contact-form" onsubmit="sendWhatsApp(event)">
-      <h3>Send an Enquiry</h3>
-      <div class="formgrid">
-        <div class="field"><label>Your Name</label><input id="name" required></div>
-        <div class="field"><label>Phone</label><input id="phone" required></div>
-        <div class="field"><label>Enquiry Type</label><select id="type"><option>Product Enquiry</option><option>Bulk Order</option><option>Business Partnership</option><option>Import / Export</option><option>IT / Services</option><option>Other</option></select></div>
-        <div class="field"><label>Product / Subject</label><input id="subject"></div>
-        <div class="field full"><label>Message</label><textarea id="message" placeholder="Tell us what you need..."></textarea></div>
-        <div class="field full"><button class="btn primary" type="submit">Send on WhatsApp</button></div>
-      </div>
-    </form>
-  </div>
-</div>
-</section>
-</main>
+<section class="download"><div class="container download-grid"><div><div class="kicker">Business Card</div><div class="head" style="margin-bottom:20px"><h2>Download our business card.</h2><p>The current RAMESH & GRANDSONS business card is available here as a downloadable image.</p></div><a class="btn dark" href="assets/business-card.png" download="RAMESH-GRANDSONS-Business-Card.png">Download Business Card</a></div><div class="preview"><img src="assets/business-card.png" alt="RAMESH & GRANDSONS business card"></div></div></section>
 
-<footer class="footer">
-<div class="container">
-  <div class="footgrid">
-    <div><h3>RAMESH & GRANDSONS</h3><p>Building on Legacy. Creating the Future.</p><p>Electronics • E-Commerce • Trading • IT & Services • Manufacturing • Import / Export</p></div>
-    <div><h4>Quick Links</h4><div class="footlinks"><a href="#about">Our Story</a><a href="#businesses">Our Businesses</a><a href="#electronics">Electronics</a><a href="#partners">Partners</a></div></div>
-    <div><h4>Online</h4><div class="footlinks"><a target="_blank" href="https://www.amazon.in/l/27943762031?me=A1LE4B1GSUCSJF&ref_=sc_ls_qr">Amazon Store</a><a href="#contact">WhatsApp Enquiry</a><span>Instagram • Facebook • LinkedIn — Coming Soon</span></div></div>
-  </div>
-  <div class="copyright"><span>© <span id="year"></span> RAMESH & GRANDSONS. All rights reserved.</span><span>Website version 1.0</span></div>
-</div>
-</footer>
+<section id="contact" class="contact"><div class="container"><div class="head"><div class="kicker">Contact</div><h2>Talk to the right person.</h2><p>For product prices, bulk requirements, marketplace support, business partnerships or new opportunities, send an enquiry.</p></div><div class="contact-grid"><div class="card"><h3>RAMESH & GRANDSONS</h3><p>Parent business group • Ramesh Radio Center • Volt-Care</p><div class="details"><div><b>Phone / WhatsApp</b><span>8804558777 • 6203821250 • 6200120648</span></div><div><b>Email</b><span>rameshandgrandsons@gmail.com</span></div><div><b>Address</b><span>Opposite Durga Mandir, Bihar Road, Ekangarsarai, Bihar – 801301</span></div><div><b>GSTIN</b><span>10GNBPK5673K1ZW</span></div></div></div><form class="card" onsubmit="sendEnquiry(event)"><h3>Send an Enquiry</h3><div class="formgrid"><div class="field"><label>Name</label><input id="name" required></div><div class="field"><label>Phone</label><input id="phone" required></div><div class="field full"><label>Enquiry Type</label><select id="etype"><option>Product / Price</option><option>Bulk Order</option><option>E-Commerce</option><option>Volt-Care</option><option>Business Partnership</option><option>Other</option></select></div><div class="field full"><label>Message</label><textarea id="message" required></textarea></div><div class="field full"><button class="btn gold" type="submit">Send via WhatsApp</button></div></div></form></div></div></section>
 
-<a class="float-wa" target="_blank" aria-label="WhatsApp" href="https://wa.me/918804558777?text=Hello%20RAMESH%20%26%20GRANDSONS">◉</a>
+<footer class="footer"><div class="container"><div class="footgrid"><div><h3>RAMESH & GRANDSONS</h3><p>A multi-business company connecting electronics, e-commerce and future business initiatives.</p></div><div><h4>Businesses</h4><div class="footlinks"><a href="business.html?key=electronics">Ramesh Radio Center</a><a href="business.html?key=ecommerce">E-Commerce</a><a href="business.html?key=import-export">Import / Export</a><a href="business.html?key=it-services">IT / Services</a><a href="#partners">Our Partners</a></div></div><div><h4>Online</h4><div class="footlinks"><a href="https://www.amazon.in/l/27943762031?me=A1LE4B1GSUCSJF&ref_=sc_ls_qr">Amazon</a><a href="https://www.meesho.com/RAMESHRADIOCENTER?ms=2">Meesho</a><a href="https://seller.flipkart.com/index.html#dashboard/sellerOnboarding?onboardingState=onboardingDashboard">Flipkart</a><button id="catalogue-manager" onclick="openAdmin()" style="background:none;border:0;color:#b9c7d5;text-align:left;padding:0;cursor:pointer">Catalogue Manager</button></div></div></div><div class="copyright"><span>© 2026 RAMESH & GRANDSONS</span><span>Social media links can be added later.</span></div></div></footer>
 
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-function sendWhatsApp(e){
-  e.preventDefault();
-  const n=document.getElementById('name').value, p=document.getElementById('phone').value;
-  const t=document.getElementById('type').value, s=document.getElementById('subject').value;
-  const m=document.getElementById('message').value;
-  const text=`Hello RAMESH & GRANDSONS,%0A%0AName: ${encodeURIComponent(n)}%0APhone: ${encodeURIComponent(p)}%0AEnquiry: ${encodeURIComponent(t)}%0ASubject: ${encodeURIComponent(s)}%0AMessage: ${encodeURIComponent(m)}`;
-  window.open('https://wa.me/918804558777?text='+text,'_blank');
-}
-</script>
-</body>
-</html>
+<div class="chat" id="chat"><div class="chathead"><div><b>R&G Assistant</b><br><small>Basic business help</small></div><button onclick="document.getElementById('chat').classList.remove('open')" style="background:none;border:0;color:#fff;font-size:20px">×</button></div><div class="chatbody" id="chatbody"></div><div class="quickbar"><button class="quick">Product price</button><button class="quick">Our brands</button><button class="quick">Contact details</button><button class="quick">Online stores</button></div><div class="chatinput"><input id="chatinput" placeholder="Ask something..."><button id="chatsend">Send</button></div></div><button class="chat-toggle" onclick="document.getElementById('chat').classList.toggle('open')">💬</button>
+
+<div class="modal" id="adminModal"><div class="modalbox"><div class="modalhead"><h2>Catalogue Manager</h2><button class="close" onclick="closeAdmin()">×</button></div><div class="admin-note"><b>GitHub Pages note:</b> this editor stores changes in your current browser. Use <b>Export products.json</b>, replace <code>data/products.json</code> in your GitHub repository, and commit the file to make changes public for everyone.</div><div class="admin-tabs"><button onclick="document.getElementById('addBox').scrollIntoView()">Add product</button><button onclick="exportProducts()">Export products.json</button><label class="btn" style="background:#eee">Import JSON<input type="file" accept=".json,application/json" onchange="importProducts(event)" hidden></label><button onclick="resetProducts()">Reset starter catalogue</button></div><div id="addBox" class="card" style="box-shadow:none"><h3>Add Product</h3><div class="formgrid"><div class="field"><label>Name</label><input id="pn"></div><div class="field"><label>Category</label><input id="pc" placeholder="Iron / TV / Fan / Speaker"></div><div class="field"><label>Price (₹)</label><input id="pp" type="number" min="0"></div><div class="field"><label>Image URL / path</label><input id="pi" placeholder="assets/products/iron.jpg"></div><div class="field full"><label>Description</label><textarea id="pd"></textarea></div><div class="field full"><button class="btn gold" onclick="addProduct()">Add Product</button></div></div></div><h3>Current Catalogue</h3><div class="admin-list" id="adminList"></div></div></div>
+
+<script src="app.js"></script>
+</body></html>

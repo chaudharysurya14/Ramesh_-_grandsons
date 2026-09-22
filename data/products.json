@@ -1,0 +1,74 @@
+[
+  {
+    "id": "iron-001",
+    "name": "Electric Iron",
+    "category": "Irons",
+    "price": 0,
+    "image": "assets/products/iron.jpg",
+    "description": "Representative product image. Update model, specifications, warranty and price from the Catalogue Manager.",
+    "active": true
+  },
+  {
+    "id": "tv-001",
+    "name": "LED TV",
+    "category": "Televisions",
+    "price": 0,
+    "image": "assets/products/tv.jpg",
+    "description": "Representative product image. Update screen size, model, features and price from the Catalogue Manager.",
+    "active": true
+  },
+  {
+    "id": "fan-001",
+    "name": "Ceiling Fan",
+    "category": "Fans",
+    "price": 0,
+    "image": "assets/products/fan.jpg",
+    "description": "Representative product image. Update model, sweep, warranty and price from the Catalogue Manager.",
+    "active": true
+  },
+  {
+    "id": "speaker-001",
+    "name": "Speaker",
+    "category": "Speakers",
+    "price": 0,
+    "image": "assets/products/speaker.jpg",
+    "description": "Representative product image. Update model, audio features and price from the Catalogue Manager.",
+    "active": true
+  },
+  {
+    "id": "cooler-001",
+    "name": "Air Cooler",
+    "category": "Coolers",
+    "price": 0,
+    "image": "assets/products/cooler.jpg",
+    "description": "Representative product image. Update capacity, model, warranty and price from the Catalogue Manager.",
+    "active": true
+  },
+  {
+    "id": "mixer-001",
+    "name": "Mixer Grinder",
+    "category": "Kitchen Appliances",
+    "price": 0,
+    "image": "assets/products/mixer.jpg",
+    "description": "Representative product image. Update model, features, warranty and price from the Catalogue Manager.",
+    "active": true
+  },
+  {
+    "id": "appliance-001",
+    "name": "Home Appliance",
+    "category": "Home Appliances",
+    "price": 0,
+    "image": "assets/products/home-appliance.jpg",
+    "description": "Representative product image. Replace with the exact stock/model image when available.",
+    "active": true
+  },
+  {
+    "id": "electrical-001",
+    "name": "Extension Board",
+    "category": "Electrical Accessories",
+    "price": 0,
+    "image": "assets/products/extension-board.jpg",
+    "description": "Representative product image. Update specifications and price from the Catalogue Manager.",
+    "active": true
+  }
+]
